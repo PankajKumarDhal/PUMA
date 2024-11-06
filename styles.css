@@ -1,0 +1,1016 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.u-bar {
+  display: flex;
+  height: 44px;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.u-bar p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.hero-section {
+  /* background-image: url(/img/hero_backgroud.webp); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  height: 80px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.logo img {
+  width: 60px;
+  margin: var(--margin);
+}
+
+.comple-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px white solid;
+  padding: 8px 15px;
+  width: 120px;
+  border-radius: 2px;
+  height: 40px;
+}
+
+.search-bar input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  color: white;
+  width: 100%;
+}
+
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.icons i {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.mini-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.offer {
+  background-color: rgba(67, 69, 131, 1);
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.offer p {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.offer h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin: 5px 0 0;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  nav ul {
+    gap: 20px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .icons {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .search-bar {
+    width: 100px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .container {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .comple-nav {
+    gap: 15px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .icons {
+    gap: 15px;
+    margin-right: 15px;
+  }
+
+  .offer p {
+    font-size: 14px;
+  }
+
+  .offer h2 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .u-bar {
+    height: 36px;
+  }
+
+  .u-bar p {
+    font-size: 14px;
+  }
+
+  nav {
+    height: 60px;
+  }
+
+  .logo img {
+    width: 45px;
+  }
+
+  .icons i {
+    font-size: 18px;
+  }
+
+  .offer p {
+    font-size: 12px;
+  }
+
+  .offer h2 {
+    font-size: 10px;
+  }
+}
+
+.background-section.first {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background-image: url("https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/32f16efd520940f1b163cb907f2a58f4fe051313?_a=BAMCkGfi0"); /* Replace with your image path */
+}
+
+.background-section.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background-image: url("https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/f5eaefeafb5a5ff5ca2d77b22f6b7653aed842da?_a=BAMCkGfi0"); /* Replace with your image path */
+}
+
+/* Overlay for a subtle gradient effect */
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Content styling */
+.background-content.first {
+  position: relative;
+  z-index: 2;
+  padding-left: 5rem;
+}
+.background-content.second {
+  position: relative;
+  z-index: 2;
+}
+
+.background-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.background-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .background-section {
+    height: 50vh;
+  }
+
+  .background-content h1 {
+    font-size: 2rem;
+  }
+
+  .background-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .background-section {
+    height: 40vh;
+  }
+
+  .background-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .background-content p {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+.suede {
+  position: relative;
+}
+.suede .back {
+  margin-top: 6%;
+  background-color: rgb(185, 173, 187);
+  height: 550px;
+  width: 100vw;
+}
+.suede .img1 {
+  width: 50%;
+  position: absolute;
+  top: -8%;
+  right: 2%;
+}
+.suede .img2 {
+  width: 80%;
+  position: absolute;
+  left: 2%;
+  bottom: -10%;
+}
+.suede1 {
+  position: absolute;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  top: 8%;
+  left: 2%;
+}
+.suede1 h2 {
+  font-size: 2.7vw;
+  font-weight: 700;
+}
+.suede1 p {
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+.suede1 a {
+  font-size: 1vw;
+  line-height: 1.5;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .suede .back {
+    height: 500px;
+  }
+
+  .suede1 h2 {
+    font-size: 3vw;
+  }
+
+  .suede1 p {
+    font-size: 2vw;
+  }
+
+  .suede1 a {
+    font-size: 1.2vw;
+  }
+}
+
+/* Medium Devices (less than 992px) */
+@media screen and (max-width: 992px) {
+  .suede {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .suede .back {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .suede .img1,
+  .suede .img2 {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 20px 0;
+  }
+
+  .suede1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .suede1 h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .suede1 p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .suede1 a {
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+/* Small Devices (less than 768px) */
+@media screen and (max-width: 768px) {
+  .suede1 h2 {
+    font-size: 28px;
+  }
+
+  .suede1 p {
+    font-size: 20px;
+  }
+
+  .suede1 a {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+}
+
+/* Extra Small Devices (less than 576px) */
+@media screen and (max-width: 576px) {
+  .suede {
+    margin-bottom: 20px;
+  }
+
+  .suede .back {
+    padding: 15px;
+  }
+
+  .suede .img1,
+  .suede .img2 {
+    margin: 15px 0;
+  }
+
+  .suede1 {
+    padding: 15px;
+  }
+
+  .suede1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .suede1 p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .suede1 a {
+    font-size: 12px;
+    padding: 5px 12px;
+    margin: 5px;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+/* Mobile Devices (less than 480px) */
+@media screen and (max-width: 480px) {
+  .suede1 h2 {
+    font-size: 20px;
+  }
+
+  .suede1 p {
+    font-size: 16px;
+  }
+
+  .suede1 a {
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .suede .img1,
+  .suede .img2 {
+    margin: 10px 0;
+  }
+}
+.nameheading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.3s ease;
+  padding-top: 12rem;
+}
+.nameheading p {
+  font-size: 20px;
+  color: #524e4e;
+}
+@media screen and (max-width: 992px) {
+  .nameheading {
+    padding-top: 2rem;
+    font-size: 1em;
+  }
+  .nameheading p {
+    font-size: 1em;
+  }
+}
+
+/* rec */
+.scroll-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 5%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-container div img {
+  width: 100%;
+  height: auto;
+}
+.scroll-container div div {
+  display: flex;
+  justify-content: space-between;
+}
+.scroll-container h3 {
+  display: flex;
+  width: 300px;
+  font-size: 1.5 rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.scroll-container h4 {
+  float: right;
+  width: 50px;
+  font-size: 1vw;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.background-section.four {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 1rem;
+  background-image: url("https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/a2d888ff2d01d208b66a4af9fe8edfde53b1e119?_a=BAMCkGfi0"); /* Replace with your image path */
+}
+
+.background-section.three {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 1.5rem;
+  background-image: url("https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/c7e563093ce8968cf56a0dbabc3aed8e6003eec0?_a=BAMAH2fi0"); /* Replace with your image path */
+}
+
+/* Overlay for a subtle gradient effect */
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Content styling */
+.background-content.four {
+  position: relative;
+  z-index: 2;
+}
+.background-content.three {
+  position: relative;
+  z-index: 2;
+}
+
+.background-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.background-content.three {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 3rem;
+}
+.background-content.four p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 3rem;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .background-section {
+    height: 50vh;
+  }
+
+  .background-content h1 {
+    font-size: 2rem;
+  }
+
+  .background-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .background-section {
+    height: 40vh;
+  }
+
+  .background-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .background-content p {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+.background-section.five {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 2rem;
+  background-image: url("https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/953b99043fc3ec28d0f78a56167e739a51d6afc8?_a=BAMCkGfi0"); /* Replace with your image path */
+}
+.background-content.five {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 3rem;
+}
+.scrollheader{
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+   /* margin-bottom: -3rem; */
+   font-size: medium;
+}
+
+.background-section.six {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+    padding: 20px;
+    background-image: url("https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/21e926883273ea2f81973344ac8fdd4174716bd5?_a=BAMCkGfi0"); /* Replace with your image path */
+  }
+
+.last{
+    margin-top: 1rem;
+}
+
+/* ------- */
+.scroll-container {
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    gap: 10px;
+}
+  
+.scroll-container div img {
+    width: 100%;
+    height: auto;
+}
+.scroll-container div div{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+.scroll-container h3{
+    width: 300px;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    float: left;
+    font-weight: 700;
+}
+.scroll-container h4{
+    float: right;
+    color: red;
+    width: 50px;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.scroll-container h5{
+    
+}
+.onepiece{
+    position: relative;
+    padding-top: 5%;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer*/
+
+footer {
+  background-color: rgba(24, 24, 24);
+  margin-top: 10%;
+  padding: 30px 0;
+  color: rgba(223, 224, 225);
+}
+
+footer .container .out {
+  padding: 0 15px;
+  border-bottom: 1px solid;
+}
+
+footer h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 16px;
+}
+
+.in {
+  margin: 0;
+}
+
+.row ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.row ul li {
+  padding-left: 0;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.d-flex li {
+  padding: 0 20px;
+}
+
+.d-flex li i {
+  font-size: 22px;
+}
+
+li img {
+  width: 60px;
+  border: 2px solid rgb(102, 102, 102);
+  border-radius: 15px;
+  transition: border-color 0.3s ease;
+}
+
+li img:hover {
+  border-color: rgb(255, 255, 255);
+}
+
+.d-flex2 {
+  padding-top: 20px;
+}
+
+.bottom {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.bottom a {
+  color: rgba(223, 224, 225);
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.bottom p {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.bottom #btn {
+  border: 1px solid rgb(223, 224, 225);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  transition: border-width 0.3s ease;
+}
+
+.bottom #btn:hover {
+  border-width: 2px;
+}
+
+footer li:hover {
+  color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .row ul li {
+    font-size: 14px;
+  }
+
+  .bottom p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cart li a {
+    font-size: 0;
+    border: none;
+  }
+
+  .cart li a i,
+  .cart li i {
+    font-size: 16px;
+  }
+
+  .d-flex li {
+    padding: 0 10px;
+  }
+
+  li img {
+    width: 45px;
+  }
+
+  footer h6 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 0;
+  }
+
+  .row ul li {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+
+  .d-flex li i {
+    font-size: 18px;
+  }
+
+  .bottom a {
+    padding: 8px 12px;
+  }
+
+  .bottom p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .container .out {
+    padding: 0 10px;
+  }
+
+  .d-flex li {
+    padding: 0 5px;
+  }
+
+  li img {
+    width: 35px;
+  }
+
+  .bottom {
+    padding-top: 15px;
+  }
+}
